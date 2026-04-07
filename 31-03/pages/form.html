@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <form></form> cria um formulário-->
+    <form action="">
+        <h2>Formulário de Cadastro</h2>
+        <label for="nome">Nome</label> <!-- Dá um título para o campo abaixo-->
+        <input type="text" name="nome" id="exemplo1" class="exemplo"> <!-- Input é o campo onde vamos escrever algo-->
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email1" class="email">
+
+        <label for="senha">senha</label>
+        <input type="password" name="senha" id="senha1" class="senha">
+
+        <label for=""></label>
+        <input type="checkbox" name="escolhas" id="checkbox1" class="checkboxes" value="JS"> JS <br>
+        <input type="checkbox" name="escolhas" id="checkbox2" class="checkboxes" value="HTML"> HTML <br>
+        <input type="checkbox" name="escolhas" id="checkbox3" class="checkboxes" value="CSS"> CSS <br>
+        <input type="checkbox" name="escolhas" id="checkbox4" class="checkboxes" value="PHP"> PHP <br>
+        <input type="checkbox" name="escolhas" id="checkbox5" class="checkboxes" value="SQL"> SQL <br>
+
+        <label for="sexo">Gênero</label>
+        <input type="radio" name="sexo" id="sexo1" value="masculino" class="sexo"> Masculino <br>
+        <input type="radio" name="sexo" id="sexo2" value="feminino" class="sexo"> Feminino <br>
+        <input type="radio" name="sexo" id="sexo3" value="indefinido" class="sexo"> Indefinido <br>
+        <input type="radio" name="sexo" id="sexo4" value="não-informado" class="sexo"> Nãoinformado <br>
+
+        <!-- Select: lista suspensa-->
+        <label for="curso"> Curso desejado: </label>
+        <select name="curso" id="curso">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JS</option>
+        </select>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="message" rows="4" cols="40" class="mensagem"></textarea>
+
+        <label for="nascimento"></label>
+        <input type="date" name="nascimento" id="nascinmento1" class="dataNascimento">
+
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+
+</html>

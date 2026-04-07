@@ -1,0 +1,12 @@
+div{
+    width:150px;
+    height:100px;
+    margin: 50px;
+    padding:50px;
+}
+.box1{
+    background-color:black;
+}
+.box{
+    background-color:red;
+}

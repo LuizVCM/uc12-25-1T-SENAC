@@ -1,0 +1,12 @@
+body{
+    display:flex;
+    flex-direction:row;
+}
+
+div{
+    width:30%;
+    background-color:gray;
+    margin:30px;
+    padding:10px;
+   height:200px;
+}

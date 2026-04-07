@@ -1,0 +1,104 @@
+/*Aplica para tudo*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.cimaSenac {
+    background-color: white;
+    padding: 15px 80px 15px 80px;
+    /* esta propriedade transforma o container em um display flex*/
+    display: flex;
+    /* esta propriedade faz com que os itens sejam alinhados na linha vertical => | */
+    align-items: center;
+    /* esta propriedade faz com que os itens sejam alinhados na linha horizontal => --- */
+    justify-content: space-between;
+}
+
+/*Aplica estilos apenas nas imagens que estão presentes dentro de outro elemento, independente do nível (ou seja, aplica a img dentro de header, mesmo que o img esteja dentro de outro elemento*/
+header img {
+    /*px é uma unidade fixa (pixels)*/
+    /* % é uma unidade relativa, ou seja, que se adapta */
+    width: 10%;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    /**retira as decorações de texto*/
+    font-size: large;
+    margin: 0 10px 0 10px;
+}
+
+header a {
+    color: rgb(5, 71, 71);
+    font-weight: bold;
+
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header i {
+    margin: 15px;
+}
+
+/*classes no css devem ser declaradas com ponto*/
+.banner-main {
+    /*define ujma*/
+    background-image: url(https://api.senacrs.com.br/bff/site-senac/v1/file/3116793a23e403d871cc55c95220d7b51b5e6f.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+.cursos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 30vh;
+    gap:30px;
+
+}
+
+.curso-imagem img {
+    height: 100%;
+
+}
+
+.curso-imagem {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 111, 0);
+    overflow: hidden;
+    /*impede que saia para fora*/
+  
+    /*faz com que a imagem se estenda por todo o container*/
+
+}
+
+.cursos {
+    color: black;
+
+}
+
+.borda-azul {
+    border: 5px solid rgb(0, 38, 255);
+}
+
+.curso h3 {
+    font-size: medium;
+    font-weight: normal;
+    color: rgb(5, 71, 71);
+}
