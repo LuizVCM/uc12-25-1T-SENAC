@@ -1,0 +1,16 @@
+div{
+    width:500px;
+    height:100px;
+    padding:10px;
+    border:1px solid black;
+    margin: 0 auto;
+    display:flex;
+    flex-direction:row;
+}
+button, h1{
+    margin:10px;
+}
+div button{
+display:inline-block;
+width:250px;
+}

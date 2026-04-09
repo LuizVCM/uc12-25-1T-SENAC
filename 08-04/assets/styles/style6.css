@@ -1,0 +1,13 @@
+div{
+    width: 150px;
+    height:80px;
+    background-color:gray;
+    margin:10px;
+}
+.um{
+    display:block;
+}
+.dois{
+    display: inline;
+}
+.tres{display: inline-block;}

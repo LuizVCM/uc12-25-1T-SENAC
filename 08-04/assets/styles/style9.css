@@ -1,0 +1,14 @@
+/*Parte sem conserto: 
+a {
+  width: 200px;
+  background: gray;
+}
+
+*/
+
+/*Com conserto: */
+a{
+    width: 200px;
+    background-color:gray;
+    display: inline-block;
+}
