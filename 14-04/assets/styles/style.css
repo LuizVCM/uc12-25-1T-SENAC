@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 30px;
+    padding: 20px;
+    position: sticky;
+}
+
+.secao {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: rgb(255, 255, 255);
+
+
+}
+
+.menus {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.secao a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    ;
+}
+
+.signIn {
+    width: 75px;
+    height: 30px;
+    background: linear-gradient(to right, red 50%, black 50%);
+    margin-top: -5px;
+    color: white;
+    border-radius: none;
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+header img {
+    transform: scale(39%);
+}
+
+main {
+    height: 100%;
+    background-color: rgb(46, 45, 45);
+    width: 100%;
+    box-shadow: inset 0 0 20px black;
+    filter: contrast(105%);
+    width: 100vw;
+}
+
+.assistir {
+    width: 160px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    border-radius: none;
+    border: none;
+    background: linear-gradient(to right, red 50%, black 50%);
+}
+
+.assistir i {
+    margin-right: 10px;
+}
+
+.destaque {
+    height: 620px;
+    background-color: green;
+    background-image: url(../images/mortal-kombat-filme-2021-foto-divulgacao.png);
+    filter: contrast(120%);
+    background-size: cover;
+    align-items: center;
+    display: flex;
+
+
+}
+
+.explicacao {
+    filter: none;
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+    margin-left: 60px;
+    height: 350px;
+    background-color: transparent;
+    padding: 25px;
+    gap: 20px;
+
+}
+
+.explicacao h1 {
+    font-size: 3.5rem;
+    text-shadow: 0 0 5px white;
+}
+
+.explicacao div {
+    margin-top: -15px;
+    margin-left: -60px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    transform: scale(0.8);
+
+}
+
+.filmes {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+
+
+
+}
+
+.filme {
+    display: flex;
+    width: 350px;
+    height: 600px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: inset 0 0 40px black;
+    margin-top: 10px;
+    filter: saturate(80%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*banner de cada filme*/
+
+#demonSlayer {
+    background-image: url("https://m.media-amazon.com/images/I/91Cs3476iTL.jpg");
+}
+
+#tadc {
+    background-image: url("https://i.redd.it/sodjomfhhdug1.jpeg")
+}
+#ironMan{
+    background-image: url("https://static.wikia.nocookie.net/cancelled-movies/images/9/95/Iron_Man_4.jpg/revision/latest?cb=20200418173021")
+}
+#batman{
+background-image: url("https://legadodadc.com.br/wp-content/uploads/2021/11/FD1yq6PWUAYeJUv.jpg")
+}
+#spiderMan{
+    background-image: url("https://c8.alamy.com/comp/2R1WM4G/spider-man-across-the-spider-verse-aka-spider-man-across-the-spider-verse-part-one-aka-spider-man-cruzando-el-multiverso-spanish-language-poster-spider-man-miles-morales-front-center-voice-shameik-moore-spider-man-india-bottom-right-voice-karan-soni-jessica-drew-bottom-left-voice-issa-rae-spider-man-2099-top-center-voice-oscar-isaac-spider-gwen-gwen-stacy-center-left-voice-hailee-steinfeld-peter-b-parker-top-right-voice-jake-johnson-2023-sony-pictures-releasing-marvel-entertainment-courtesy-everett-collection-2R1WM4G.jpg")
+}
+#herryP{
+    background-image: url("https://upload.wikimedia.org/wikipedia/pt/3/3a/Harry_Potter_and_the_Deathly_Hallows_-_Part_2.jpg");
+}
+#filme1{
+    background-image: url("https://m.media-amazon.com/images/I/61mjnP-qt6L._AC_UF1000,1000_QL80_.jpg");
+}
+#filme2{
+    background-image: url("https://media.freemalaysiatoday.com/wp-content/uploads/2025/12/4439c251-%E2%80%98five-nights-at-freddys-2-.webp");
+}
+#filme3{
+    background-image: url("https://t.ctcdn.com.br/156ZvydKqgzR1B1SeO_y7KJvrTo=/1200x675/smart/i1100283.jpeg");
+}
+#filme4{
+    background-image: url("https://preview.redd.it/god-of-war-tv-series-first-look-v0-atk2cg6w93mg1.jpeg?width=1360&format=pjpg&auto=webp&s=9a9e87a5044f37a85cc81a727343f25e80373d53");
+}
+#filme5{
+    background-image: url("https://i.redd.it/o2xy5y3ujnqe1.jpeg")
+}
+#filme6{
+    background-image: url("https://a.storyblok.com/f/178900/1920x1080/b736a20882/my-hero-academia-season-7-key-art-wide.png/m/1200x0/filters:quality(95)format(webp)")
+}
+#filme7{
+    background-image: url("")
+}
