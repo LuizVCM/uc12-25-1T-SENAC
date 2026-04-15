@@ -1,0 +1,19 @@
+div{
+    background-color: blueviolet;
+    height:400px;
+    width:400px;
+}
+
+.container-pai{
+    background-color: blue;
+    height:400px;
+    width: 50%;
+}
+.container-fiho{
+    width:10%;
+}
+.container{
+    background-color: darkslategray;
+    height:10vh;
+    width: 10vw;
+}

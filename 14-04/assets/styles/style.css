@@ -3,7 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family:"Grime Slime";
+    src: url(../fonts/GrimeSlime-Regular.ttf) format('truetype');
+}
 body {
     background-color: rgb(255, 255, 255);
     height: 100vh;
@@ -11,6 +14,8 @@ body {
     justify-content: center;
     color: white;
     overflow-x: hidden;
+    transition: border linear 0.3s;
+ 
 }
 
 header {
@@ -116,6 +121,7 @@ main {
     background-color: transparent;
     padding: 25px;
     gap: 20px;
+   
 
 }
 
@@ -158,6 +164,12 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    transition: width linear 0.2s, height linear 0.2s, filter linear 0.2s;
+}
+.filme:hover{
+    width: 450px;
+    height:630px;
+filter: saturate(110%);
 }
 
 /*banner de cada filme*/
@@ -200,5 +212,18 @@ background-image: url("https://legadodadc.com.br/wp-content/uploads/2021/11/FD1y
     background-image: url("https://a.storyblok.com/f/178900/1920x1080/b736a20882/my-hero-academia-season-7-key-art-wide.png/m/1200x0/filters:quality(95)format(webp)")
 }
 #filme7{
-    background-image: url("")
+    background-image: url("https://static4.moviehub.com.br/fotos/filmes/poster/16310_medio.jpg");
+}
+#filme8{
+    background-image: url(" https://m.media-amazon.com/images/M/MV5BNmFkNzc3MDMtYzY4MC00NTI5LWI2M2QtYjZiM2M1MWE4NjJlXkEyXkFqcGc@._V1_.jpg ");
+}
+#filme9{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKy2P41uI3geZmPs18Za_LnBNPBSwfW-F8jQ&s")
+}
+button{
+    transition: border linear 0.3s;
+}
+button:hover{
+ border: 1px solid white;
+ box-shadow: 0 0 10px red;
 }
