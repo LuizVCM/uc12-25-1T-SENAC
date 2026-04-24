@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:black;
+    height: 100vh;
+}
+.fundo{
+    align-items:center;
+    justify-content:space-evenly    ;
+    display:flex;
+    width: 90vw;
+   
+    background-color:rgb(15, 2, 2);
+    flex-wrap: wrap;
+
+}
+
+.att1{
+    width: 400px;
+    height:650px;
+    margin:15px;
+    background-color:rgb(241, 164, 164);
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    flex-direction:column;
+    gap: 30px;
+    
+}
+.att1 div{
+    width:95%;
+    height:50%; 
+    border: 1px solid black;    
+    background-color:rgba(0, 0, 0, 1);
+    border-radius: 30px;    
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.att1 button{
+    display:flex;
+    background-color:green;
+    width:80%;
+    height:50px;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-size: 1.3rem;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius:15px;
+    border: none;   
+}
+.image1{
+    background-image: url("https://media.xp-pen.co/web/2025/06/24/2025062414333699235015.jpeg");
+}
+.image2{
+    background-image: url("https://www.ahnegao.com.br/wp-content/uploads/2017/10/img-3.jpg");
+}
+.image3{
+    background-image: url("https://www.ahnegao.com.br/wp-content/uploads/2026/01/imgaleat-6ut-2.jpg");
+}
+.image4{
+    background-image: url("https://img.freepik.com/fotos-premium/melhor-foto-aleatoria_865967-88077.jpg");
+}
+
+
