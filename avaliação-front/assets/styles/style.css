@@ -1,69 +1,412 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Nosifer&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rationale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Handjet:wght,ELSH@100..900,2&family=Honk:MORF@15&family=Iceberg&family=Lora:ital,wght@1,400..700&family=Mountains+of+Christmas:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Rubik+Glitch&family=Rubik+Iso&family=Silkscreen:wght@400;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    display:flex;
+body {
+    display: flex;
+    flex-direction: column;
     background-color: black;
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
     color: white;
     font-size: 1.3rem;
-     font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
 
 }
-.menu-cima{
+
+.menu-cima {
     background-color: rgb(41, 41, 31);
-    width: 100vw;
-    height: 800px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     background-image: url("https://wanderland.qodeinteractive.com/wp-content/uploads/2019/11/h1-rev-slide1-bckg.jpg");
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
-   
-
-}
-header{
-    display:flex;
-    align-items:center;
-    justify-content: space-between;
-    color: black; 
-    height: 100%;  
-    width: 95%;
-    color: white;
+    background-size: cover;
 
 
 }
-.barraCima, .barraBaixo{
+
+.marca {
     display: flex;
-    height: 5px;
-    background-color: black;
-    width: 90%;
+    width: 100%;
+    height: 80px;
+    background-image: url(../images/sobreposição.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
 }
-.menu{
-    display:flex;
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    height: 110px;
+    width: 90%;
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 1.1rem;
+
+
+}
+
+main{
+    display: flex;
+    width: 100%;
+    background-color: white;
     flex-direction: column;
-    position:  absolute;
+    color: black;
+    align-items:center;
+    background-image: url(../images/fundoBranco.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position:relative;
+    gap: 50px;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
     background-color: rgba(255, 255, 255, 0);
     width: 100vw;
     gap: 22px;
     height: 140px;
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
     top: 30px;
 
 }
-.destino{
-    display:flex;
-    
+
+.destino,
+.search {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+
 }
+
+.destino h1,
+.search h1 {
+    font-size: 1.1rem;
+
+}
+
+header img {
+    display: flex;
+    width: 130px;
+    height: 105px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegar {
+    gap: 5vw;
+    display: flex;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 770px;
+    height: 400px;
+    position: absolute;
+    top: 170px;
+}
+
+.referencia {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 350px;
+    height: 50px;
+
+
+
+}
+
+.data,
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.person {
+    gap: 10px;
+}
+
+.setas {
+    display: flex;
+    width: 95%;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.seta {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+
+}
+
+h4 {
+    display: flex;
+    font-size: 1rem;
+    font-family: "Lora", serif;
+    transform: skewX(-20deg);
+    font-optical-sizing: auto;
+    font-weight: 600;
+    margin-top: 10px;
+    gap: 5px;
+
+}
+
+.titleContent {
+    display: flex;
+    font-size: 3.24rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    transform: scale(1.08);
+}
+
+.descrever {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.descrever p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1rem;
+}
+
+.read {
+    width: 180px;
+    height: 55px;
+    display: flex;
+    background-color: rgb(91, 132, 91);
+    border: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 40px;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.01rem;
+    font-weight: 700;
+    gap: 3px;
+
+}
+
+.ponta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: rotate(135deg);
+}
+
+.navegar a {
+    color: white;
+    text-decoration: none;
+}
+
+.marcas {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+main h5{
+    display: flex;
+    margin-top: 80px;
+       font-size: 1.1rem;
+       font-style: italic;
+    font-family: "Lora", serif;
+    color: rgba(0, 0, 0, 0.512);
+    font-weight: 100;
+    transform: skewX(-10deg);
+}
+main h1, .inscricao h1{
+    display:flex;
+    font-size: 3rem;
+    margin-top: -50px;
+    margin-bottom:-50px;
+}
+main span{
+    display:flex;
+    color: white;
+    background-color: red;
+    margin-left: 10px;
+}
+.inscricao h1{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+}
+.inscricao {
+    display: flex;
+    align-items:center;
+    justify-content: left;
+    flex-direction: column;
+  width: 700px;
+  position:relative;
+}
+
+/*Parei aqui*/
+.jornal{
+    display:flex;
+    margin-left:0;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255); 
+    color: black;
+    position: absolute;
+    bottom:58px;
+    right:320px;
+}
+.inscricao p{
+    font-size: 1.2rem;
+    display:flex;
+    text-align:left;
+
+}
+
+
+.imagem{
+    display:flex;
+    width: 650px;
+    height: 420px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.imagem:nth-child(1){
+    background-image: url(../images/tirolesa.jpg);
+}
+.descricao, .descricao2{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 80%;
+  transform: translateX(-50px);
+  margin-top: 70px;
+}
+.descricao2{
+    transform: translateX(60px);
+    margin-top: 0;
+    margin-bottom:80px;
+}
+.descricao2 .imagem{
+    background-image: url(../images/caminhada.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.descricao2 .dizer h2{
+    width: 100%;
+}
+
+.dizer{
+    display:flex;
+    flex-direction: column;
+    width: 500px;
+    text-align: left;
+    justify-content: left;
+    position: relative;
+
+}
+.dizer h2{
+    display:flex;
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    font-size-adjust: calc(20px);
+    width: 80%;
+    font-weight: 900;
+   font-family: "Oswald", sans-serif;
+   line-height: 33px;
+   margin-bottom: 15px;
+
+   
+}
+.dizer p{
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 85%;
+    text-align: left;
+    color: rgb(163, 163, 163);
+    word-spacing: 6px;
+    line-height: 30px;
+    font-weight: 550;
+}
+.more{
+    display: flex;
+   width: 150px;
+   padding: 0;
+   align-items:center;
+   justify-content: left;
+   background-color: transparent;
+   color: black;
+   margin: 0;
+}
+.marrom{
+    display:flex;
+    width: 100%;
+    background-image: url(../images/sobreporMarrom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items:center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+.livro{
+    display: flex;
+    background-image: url(../images/livro.png);
+    width: 650px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
