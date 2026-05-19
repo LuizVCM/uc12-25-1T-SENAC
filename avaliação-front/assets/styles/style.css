@@ -39,7 +39,7 @@ body {
 .marca {
     display: flex;
     width: 100%;
-    height: 80px;
+    height: 150px;
     background-image: url(../images/sobreposição.png);
     background-position: center;
     background-size: cover;
@@ -63,18 +63,18 @@ header {
 
 }
 
-main{
+main {
     display: flex;
     width: 100%;
     background-color: white;
     flex-direction: column;
     color: black;
-    align-items:center;
-    background-image: url(../images/fundoBranco.jpg);
+    align-items: center;
+    background-image: url(../images/fundosla.jpg.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position:relative;
+    position: relative;
     gap: 50px;
 
 }
@@ -101,11 +101,13 @@ main{
     justify-content: center;
 
 
+
 }
 
 .destino h1,
 .search h1 {
     font-size: 1.1rem;
+
 
 }
 
@@ -130,7 +132,6 @@ header img {
     width: 770px;
     height: 400px;
     position: absolute;
-    top: 170px;
 }
 
 .referencia {
@@ -169,9 +170,47 @@ header img {
 .seta {
     width: 100px;
     height: 40px;
-    background-color: white;
     display: flex;
+    background-image: url(../images/flechas.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    filter:brightness(1.2) contrast(1.1);
 
+}
+.seta:nth-child(1){
+    transform:rotate(180deg);
+}
+.mensagem{
+    display:flex;
+    width: 90%;
+    height: 140px;  
+    gap: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    bottom: 0;
+    left: -30px;
+}
+#nome, #email{
+    display:flex;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    align-items:center;
+}
+
+.subscribe{
+    display:flex;
+    width: 100%;
+    align-items:center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: white;
+    background-color: green;
+    border: none;
+    
 }
 
 h4 {
@@ -242,110 +281,173 @@ h4 {
 .marcas {
     display: flex;
     height: 150px;
-    width: 100%;
+    width: 80%;
+    filter: contrast(1.1);
     padding: 15px;
     align-items: center;
     justify-content: space-evenly;
     background-color: white;
+
 }
 
-main h5{
+
+main h5 {
     display: flex;
     margin-top: 80px;
-       font-size: 1.1rem;
-       font-style: italic;
+    font-size: 1.1rem;
+    font-style: italic;
     font-family: "Lora", serif;
     color: rgba(0, 0, 0, 0.512);
     font-weight: 100;
     transform: skewX(-10deg);
 }
-main h1, .inscricao h1{
-    display:flex;
+
+main h1,
+.inscricao h1 {
+    display: flex;
     font-size: 3rem;
     margin-top: -50px;
-    margin-bottom:-50px;
+    margin-bottom: -50px;
+    align-items: center;
+    transform: scale(1.1);
 }
-main span{
-    display:flex;
+
+main span {
+    display: flex;
     color: white;
-    background-color: red;
     margin-left: 10px;
 }
-.inscricao h1{
-    display:flex;
-    align-items:center;
-    justify-content:center;
+
+.inscricao h1 {
+    display: flex;
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: 30px;
     font-size: 2.5rem;
 }
+
 .inscricao {
     display: flex;
-    align-items:center;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-  width: 700px;
-  position:relative;
+    width: 700px;
+    
+    position: relative;
+}
+.inscricao h5{
+    width: 700px;
+    display:flex;
+    align-items: center;
+    justify-content : start;
+
 }
 
 /*Parei aqui*/
-.jornal{
-    display:flex;
-    margin-left:0;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 255, 255); 
+.jornal {
+    display: flex;
+    margin-left: 30px;
+    background-color: rgb(255, 255, 255);
     color: black;
     position: absolute;
-    bottom:58px;
-    right:320px;
+    bottom: 0;
+    left: 150px;
+    right: 320px;
+    color: rgb(43, 94, 43);
+    box-shadow: 0 0 5px white;
 }
-.inscricao p{
+
+.inscricao p {
     font-size: 1.2rem;
-    display:flex;
-    text-align:left;
+    display: flex;
+    text-align: left;
 
 }
 
+main h1 .tipos {
+    display: flex;
+    background-image: url(../images/tips.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 50px;
 
-.imagem{
-    display:flex;
+}
+
+.imagem {
+    display: flex;
     width: 650px;
     height: 420px;
-    background-color: black;
+    background-image: url(../images/tirolesa.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
 }
-.imagem:nth-child(1){
+
+.traveltips {
+    display: flex;
+    width: 150px;
+    height: 35px;
+    background-color: rgb(247, 242, 238);
+    position: absolute;
+    left: -15px;
+    top: 14px;
+    align-items: center;
+    font-style: italic;
+    justify-content: space-around;
+    padding: 0 15px;
+    font-family: "Lora", serif;
+    overflow: hidden;
+
+
+}
+
+
+.traveltips span {
+    display: flex;
+    width: 200px;
+    transform: skewX(-10deg);
+    color: rgb(161, 155, 149);
+    font-weight: 100;
+font-size: 1.03rem;
+
+}
+
+.imagem:nth-child(1) {
     background-image: url(../images/tirolesa.jpg);
 }
-.descricao, .descricao2{
+
+.descricao,
+.descricao2 {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
-    width: 80%;
-  transform: translateX(-50px);
-  margin-top: 70px;
+    width: 1230px;
+    transform: translateX(-50px);
+    margin-top: 70px;
 }
-.descricao2{
+
+.descricao2 {
     transform: translateX(60px);
     margin-top: 0;
-    margin-bottom:80px;
+    margin-bottom: 80px;
 }
-.descricao2 .imagem{
+
+.descricao2 .imagem {
     background-image: url(../images/caminhada.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.descricao2 .dizer h2{
+
+.descricao2 .dizer h2 {
     width: 100%;
 }
 
-.dizer{
-    display:flex;
+.dizer {
+    display: flex;
     flex-direction: column;
     width: 500px;
     text-align: left;
@@ -353,23 +455,25 @@ main span{
     position: relative;
 
 }
-.dizer h2{
-    display:flex;
+
+.dizer h2 {
+    display: flex;
     margin: 0;
     padding: 0;
     font-size: 1.8rem;
     font-size-adjust: calc(20px);
     width: 80%;
     font-weight: 900;
-   font-family: "Oswald", sans-serif;
-   line-height: 33px;
-   margin-bottom: 15px;
+    font-family: "Oswald", sans-serif;
+    line-height: 33px;
+    margin-bottom: 15px;
 
-   
+
 }
-.dizer p{
+
+.dizer p {
     display: flex;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     width: 85%;
     text-align: left;
@@ -378,28 +482,32 @@ main span{
     line-height: 30px;
     font-weight: 550;
 }
-.more{
+
+.more {
     display: flex;
-   width: 150px;
-   padding: 0;
-   align-items:center;
-   justify-content: left;
-   background-color: transparent;
-   color: black;
-   margin: 0;
+    width: 150px;
+    padding: 0;
+    align-items: center;
+    justify-content: left;
+    background-color: transparent;
+    color: black;
+    margin: 0;
 }
-.marrom{
-    display:flex;
+
+.marrom {
+    display: flex;
     width: 100%;
     background-image: url(../images/sobreporMarrom.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    align-items:center;
+    align-items: center;
     justify-content: space-evenly;
     height: 100vh;
+    background-color: blue;
 }
-.livro{
+
+.livro {
     display: flex;
     background-image: url(../images/livro.png);
     width: 650px;
@@ -408,5 +516,48 @@ main span{
     background-size: cover;
     background-position: center;
 }
+.cards{
+    display:flex;
+    width: 470px;
+    position:static;
+    height: 100%;
+    position:relative;
+    flex-direction: column;
+    
 
+}
+.cards .explica{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    position:relative;
+    height: 100px;
+}
+.banners{
+    display:flex;
+    margin-top: 100px;
+    align-items:center;
+    justify-content:flex-start;
+    width: 70%;
+    height: 750px;
+    gap: 25px;
+    overflow: hidden;
 
+}
+.cards .falar{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 1.9rem;
+    position: absolute;
+     bottom: 0px;
+     left:30px; 
+     margin-left: 10px;
+     
+    
+}
+.explica .nomes{
+    display:flex;
+   margin-top: -55px;
+}
