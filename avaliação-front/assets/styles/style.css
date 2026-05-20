@@ -17,6 +17,7 @@ body {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
+    overflow-x: hidden;
 
 }
 
@@ -71,9 +72,6 @@ main {
     color: black;
     align-items: center;
     background-image: url(../images/fundosla.jpg.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     gap: 50px;
 
@@ -174,16 +172,18 @@ header img {
     background-image: url(../images/flechas.png);
     background-repeat: no-repeat;
     background-position: center;
-    filter:brightness(1.2) contrast(1.1);
+    filter: brightness(1.2) contrast(1.1);
 
 }
-.seta:nth-child(1){
-    transform:rotate(180deg);
+
+.seta:nth-child(1) {
+    transform: rotate(180deg);
 }
-.mensagem{
-    display:flex;
+
+.mensagem {
+    display: flex;
     width: 90%;
-    height: 140px;  
+    height: 140px;
     gap: 15px;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -191,26 +191,28 @@ header img {
     bottom: 0;
     left: -30px;
 }
-#nome, #email{
-    display:flex;
+
+#nome,
+#email {
+    display: flex;
     width: 100%;
     padding: 18px;
     border: none;
-    color: white;
+    color: rgb(80, 80, 80);
     font-size: 1.1rem;
-    align-items:center;
+    align-items: center;
 }
 
-.subscribe{
-    display:flex;
+.subscribe {
+    display: flex;
     width: 100%;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     font-size: 1.4rem;
     color: white;
     background-color: green;
     border: none;
-    
+
 }
 
 h4 {
@@ -332,14 +334,15 @@ main span {
     justify-content: center;
     flex-direction: column;
     width: 700px;
-    
+
     position: relative;
 }
-.inscricao h5{
+
+.inscricao h5 {
     width: 700px;
-    display:flex;
+    display: flex;
     align-items: center;
-    justify-content : start;
+    justify-content: start;
 
 }
 
@@ -355,6 +358,7 @@ main span {
     right: 320px;
     color: rgb(43, 94, 43);
     box-shadow: 0 0 5px white;
+    width: 195px;
 }
 
 .inscricao p {
@@ -411,7 +415,7 @@ main h1 .tipos {
     transform: skewX(-10deg);
     color: rgb(161, 155, 149);
     font-weight: 100;
-font-size: 1.03rem;
+    font-size: 1.03rem;
 
 }
 
@@ -507,6 +511,30 @@ font-size: 1.03rem;
     background-color: blue;
 }
 
+.items {
+    display: flex;
+    align-items: center;
+    background-color: cyan;
+    height: 80vh;
+    width: 100%;
+    gap: 18px;
+    flex-direction: column;
+    padding-top: 5%;
+    background-image: url(../images/sobreporMarrom.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.h1 {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+
 .livro {
     display: flex;
     background-image: url(../images/livro.png);
@@ -516,48 +544,267 @@ font-size: 1.03rem;
     background-size: cover;
     background-position: center;
 }
-.cards{
-    display:flex;
+
+.cards {
+    display: flex;
     width: 470px;
-    position:static;
+    position: static;
     height: 100%;
-    position:relative;
+    position: relative;
     flex-direction: column;
-    
+
 
 }
-.cards .explica{
-    display:flex;
-    align-items:center;
-    justify-content:center;
+
+.cards .explica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    position:relative;
+    position: relative;
     height: 100px;
 }
-.banners{
-    display:flex;
+
+.banners {
+    display: flex;
     margin-top: 100px;
-    align-items:center;
-    justify-content:flex-start;
+    align-items: center;
+    justify-content: flex-start;
     width: 70%;
     height: 750px;
     gap: 25px;
     overflow: hidden;
 
 }
-.cards .falar{
-    display:flex;
-    align-items:center;
+
+.cards .falar {
+    display: flex;
+    align-items: center;
     justify-content: center;
     font-size: 1.9rem;
     position: absolute;
-     bottom: 0px;
-     left:30px; 
-     margin-left: 10px;
-     
-    
+    bottom: 0px;
+    left: 30px;
+    margin-left: 10px;
+
+
 }
-.explica .nomes{
+
+.explica .nomes {
+    display: flex;
+    margin-top: -55px;
+}
+
+.loja {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+    height: 100%;
+    margin-top: -15px;
+}
+
+.iten {
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    filter: opacity(90%) sepia(-1);
+
+
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.item .h3 {
+    display: flex;
+    font-family: "Crimson Text", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.shoes {
+    background-image: url(../images/shoes.jpg);
+
+}
+
+.tripod {
+    background-image: url(../images/tripod.jpg);
+}
+
+.rain {
+    background-image: url(../images/raincoat.jpg);
+}
+
+.camera {
+    background-image: url(../images/camera.jpg);
+}
+
+.garrafa {
+    background-image: url(../images/garrafaAgua.jpg);
+}
+
+footer {
+    background-color: rgb(35, 37, 35);
+    display: flex;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+
+}
+
+.about {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.logo {
+    background-image: url(../images/logo-footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: opacity(80%) contrast(1.1) saturate(1.4);
+    width: 200px;
+    height: 110px;
+    transform: scale(0.8);
+
+}
+.yname, .yemail{
     display:flex;
-   margin-top: -55px;
+    padding: 20px;
+    height: 50px;
+    width: 250px;
+    border-top: none;
+    border-right: none;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+      font-family: "Crimson Text", serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      font-style: italic;
+      color: white;
+    
+
+}
+.yname::placeholder, .yemail::placeholder{
+    color: white;
+}
+
+.and {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width:50%;
+    gap: 50px;
+}
+
+.and h3 {
+    display: flex;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-family: "Crimson Text", serif;
+    color: rgb(172, 171, 171);
+    font-weight: 100;
+}
+.subscribe{
+    display:flex;
+    color: white;
+}
+.notices h1, .updates h1{
+    display: flex;
+    font-size: 1.4rem;
+    margin: 10px;
+    margin-left: 0;
+}
+
+.notices h1, .instagram h1{
+
+    width: 110%;
+}
+.updates{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    margin-bottom: 35px;
+}
+.update{
+    display:flex;
+    align-items:center;
+    
+    width: 500px;
+}
+.alinhar{
+    display:flex;
+    gap: 50px;
+}
+.update h4{
+    display:flex;
+    width: 340px;
+    margin-bottom:10px;
+}
+
+.update a{
+    align-items:center;
+    display:flex;
+    font-size: 1rem;
+    margin-right: 10px;
+    color: green;
+    text-decoration: none;
+}
+.instagram{
+    display:flex;
+    width: 250px;
+}
+.instagram h1{
+    display:flex;
+    font-size: 1.5rem;
+    margin-left: -15px;
+}
+.parteBaixo{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.direitos, .socials{
+    display:flex;
+    align-items:center;
+    gap: 15px;
+}
+.direitos h4{
+    display: flex;
+    margin-bottom: 10px;
+}
+.social{
+    display:flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+} 
+.social:nth-child(1){
+    background-image: url(../images/instagram.png);
 }
