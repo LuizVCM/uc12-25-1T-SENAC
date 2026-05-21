@@ -26,6 +26,13 @@ h4 {
 
 }
 
+mark{
+    background-color: inherit;
+    color: green;
+    align-items:center;
+    font-size: 1rem;
+}
+
 :root{
     --font-Lora:  "Lora", serif;
     --font-Oswald:  "Oswald", sans-serif;

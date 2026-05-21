@@ -5,6 +5,7 @@
     width: 350px;
     height: 50px;
 }
+    
 
 .explica .nomes {
     display: flex;
@@ -57,10 +58,14 @@
     font-family:var(--font-Oswald);
     line-height: 33px;
     margin-bottom: 15px;
-
-
 }
-
+.dizer{
+    display:flex;
+    align-items:start;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 50px;
+}
 .dizer p {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
@@ -90,13 +95,14 @@
 }
 .imagem {
     display: flex;
-    width: 650px;
+    width: 110%;
     height: 420px;
     background-image: url(../images/tirolesa.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
+    
 }
 .traveltips {
     display: flex;
@@ -163,19 +169,29 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    align-items:center;
+    justify-content:center;
     width: 30px;
     height: 30px;
-    background-color: blue;
+    transform: scale(0.7);
 } 
 
 
 .about {
     display: flex;
-    width: 20%;
-    align-items: center;
-    justify-content: center;
+    max-width: 400px;
+    height: 80%;
+    align-items: start;
+    justify-content:start;
     flex-direction: column;
-    gap: 50px;
+    gap: 10px;
+
+}
+.about p{
+    font-size: 1.2rem;
+    font-weight: 200;
+    font-family: var(--font-Crimson);
+    color: rgba(255, 255, 255, 0.747);
 }
 
 .logo {
@@ -186,6 +202,7 @@
     filter: opacity(80%) contrast(1.1) saturate(1.4);
     width: 200px;
     height: 110px;
+    margin-bottom: 18%;
     transform: scale(0.8);
 
 }
@@ -220,8 +237,9 @@
     align-items: start;
     justify-content: space-evenly;
     flex-direction: column;
-    width:50%;
+    width:50vw;
     gap: 50px;
+    transform: translateX(-100px);
 }
 
 .and h3 {
@@ -231,12 +249,19 @@
     font-family:var(--font-Crimson);
     color: rgb(172, 171, 171);
     font-weight: 100;
-}
-.subscribe{
+} 
+
+footer .subscribe{
     display:flex;
     color: white;
+    background-color:transparent;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    font-size: 1.1rem;
+    margin: 0;
 }
-.notices h1, .updates h1{
+.notices h1, .updates h1, .about h1{
     display: flex;
     font-size: 1.4rem;
     margin: 10px;
@@ -245,7 +270,7 @@
 
 .notices h1, .instagram h1{
 
-    width: 110%;
+    width: 100%;
 }
 .updates{
     display:flex;
@@ -253,7 +278,9 @@
     align-items: start;
     justify-content: space-evenly;
     margin-bottom: 35px;
+    max-width:  30%;
 }
+
 
 .alinhar{
     display:flex;
@@ -261,36 +288,47 @@
 }
 .update h4{
     display:flex;
-    width: 340px;
-    margin-bottom:10px;
+    max-width: 100%;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.complicado{
+    padding-top: 20px;
 }
 
-.update a{
-    align-items:center;
+.news{
     display:flex;
-    font-size: 1rem;
-    margin-right: 10px;
-    color: green;
-    text-decoration: none;
+    max-width: 100%;
+    flex-direction: column; 
+    align-items: start;
+}
+
+.update{
+    display:flex;
+    max-width: 100%;
+    align-items:center;
+    gap: 10px;
+    
+
 }
 .instagram{
     display:flex;
     width: 250px;
+    padding-top: 10px;
 }
 .instagram h1{
     display:flex;
-    font-size: 1.5rem;
-    margin-left: -15px;
+    font-size: 1.4rem;
 }
 .parteBaixo{
     display: flex;
     width: 100%;
     height: 50px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.651);
     position: absolute;
     bottom: 0;
     align-items:center;
-    justify-content:space-evenly;
+    justify-content:space-around;
 }
 .direitos, .socials{
     display:flex;

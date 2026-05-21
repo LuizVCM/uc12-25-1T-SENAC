@@ -59,6 +59,11 @@
     height: 400px;
     position: absolute;
 }
+.texto .referencia{
+    align-items: start;
+    padding: 0;
+    margin-left:0;
+}
 
 .person {
     gap: 10px;
@@ -95,7 +100,11 @@
     margin-bottom: 10px;
     transform: scale(1.08);
 }
-
+.dizer .read {
+    background-color : transparent;
+    color: black;
+    margin-left: 0
+}
 .descrever {
     width: 80%;
     display: flex;
@@ -212,16 +221,18 @@ main h1 .tipos {
 .descricao2 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 1230px;
-    transform: translateX(-50px);
+    justify-content:center;
+    max-width: 1400px;
     margin-top: 70px;
+    gap: 20px;
 }
 
 .descricao2 {
-    transform: translateX(60px);
     margin-top: 0;
-    margin-bottom: 80px;
+    transform: translateX(30px);
+}
+.descricao {
+    transform: translateX(-30px);
 }
 
 .descricao2 .imagem {
@@ -232,7 +243,9 @@ main h1 .tipos {
 }
 
 .descricao2 .dizer h2 {
-    width: 100%;
+    width: 80%;
+    font-size: 1.4em;
+    color:rgba(0, 0, 0, 0.788);
 }
 
 .items {
