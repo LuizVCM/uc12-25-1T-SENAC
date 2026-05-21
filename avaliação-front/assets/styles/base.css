@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    overflow-x: hidden;
+
+}
+
+
+h4 {
+    display: flex;
+    font-size: 1rem;
+    font-family: "Lora", serif;
+    transform: skewX(-20deg);
+    font-optical-sizing: auto;
+    font-weight: 600;
+    margin-top: 10px;
+    gap: 5px;
+
+}
+
+:root{
+    --font-Lora:  "Lora", serif;
+    --font-Oswald:  "Oswald", sans-serif;
+    --font-Crimson:  "Crimson Text", serif;
+}

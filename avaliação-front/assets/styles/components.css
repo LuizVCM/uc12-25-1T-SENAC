@@ -1,0 +1,338 @@
+.referencia {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 350px;
+    height: 50px;
+}
+
+.explica .nomes {
+    display: flex;
+    margin-top: -55px;
+}
+.data,
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.read {
+    width: 180px;
+    height: 55px;
+    display: flex;
+    background-color: rgb(91, 132, 91);
+    border: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 40px;
+    font-family:var(--font-Oswald);
+    font-size: 1.01rem;
+    font-weight: 700;
+    gap: 3px;
+
+}
+
+.seta {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    background-image: url(../images/flechas.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(1.2) contrast(1.1);
+
+}
+
+.dizer h2 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    font-size-adjust: calc(20px);
+    width: 80%;
+    font-weight: 900;
+    font-family:var(--font-Oswald);
+    line-height: 33px;
+    margin-bottom: 15px;
+
+
+}
+
+.dizer p {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 85%;
+    text-align: left;
+    color: rgb(163, 163, 163);
+    word-spacing: 6px;
+    line-height: 30px;
+    font-weight: 550;
+}
+
+.marrom {
+    display: flex;
+    width: 100%;
+    background-image: url(../images/sobreporMarrom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    background-color: blue;
+}
+.imagem:nth-child(1) {
+    background-image: url(../images/tirolesa.jpg);
+}
+.imagem {
+    display: flex;
+    width: 650px;
+    height: 420px;
+    background-image: url(../images/tirolesa.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.traveltips {
+    display: flex;
+    width: 150px;
+    height: 35px;
+    background-color: rgb(247, 242, 238);
+    position: absolute;
+    left: -15px;
+    top: 14px;
+    align-items: center;
+    font-style: italic;
+    justify-content: space-around;
+    padding: 0 15px;
+    font-family:var(--font-Lora);
+    overflow: hidden;
+}
+
+.ponta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: rotate(135deg);
+}
+
+.cards {
+    display: flex;
+    width: 470px;
+    position: static;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+
+
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.iten {
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    filter: opacity(90%) sepia(-1);
+
+
+}
+.update{
+    display:flex;
+    align-items:center;
+    
+    width: 500px;
+}
+.social{
+    display:flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+} 
+
+
+.about {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.logo {
+    background-image: url(../images/logo-footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: opacity(80%) contrast(1.1) saturate(1.4);
+    width: 200px;
+    height: 110px;
+    transform: scale(0.8);
+
+}
+.yname, .yemail{
+    display:flex;
+    padding: 20px;
+    height: 50px;
+    width: 250px;
+    border-top: none;
+    border-right: none;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+      font-family:var(--font-Crimson);
+      font-size: 1.2rem;
+      font-weight: 400;
+      font-style: italic;
+      color: white;
+    
+
+}
+.yname:focus, .yemail:focus{
+    border: black;
+}
+.yname::placeholder, .yemail::placeholder{
+    color: white;
+}
+
+
+.and {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width:50%;
+    gap: 50px;
+}
+
+.and h3 {
+    display: flex;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-family:var(--font-Crimson);
+    color: rgb(172, 171, 171);
+    font-weight: 100;
+}
+.subscribe{
+    display:flex;
+    color: white;
+}
+.notices h1, .updates h1{
+    display: flex;
+    font-size: 1.4rem;
+    margin: 10px;
+    margin-left: 0;
+}
+
+.notices h1, .instagram h1{
+
+    width: 110%;
+}
+.updates{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    margin-bottom: 35px;
+}
+
+.alinhar{
+    display:flex;
+    gap: 50px;
+}
+.update h4{
+    display:flex;
+    width: 340px;
+    margin-bottom:10px;
+}
+
+.update a{
+    align-items:center;
+    display:flex;
+    font-size: 1rem;
+    margin-right: 10px;
+    color: green;
+    text-decoration: none;
+}
+.instagram{
+    display:flex;
+    width: 250px;
+}
+.instagram h1{
+    display:flex;
+    font-size: 1.5rem;
+    margin-left: -15px;
+}
+.parteBaixo{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.direitos, .socials{
+    display:flex;
+    align-items:center;
+    gap: 15px;
+}
+.direitos h4{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.social:nth-child(1){
+    background-image: url(../images/instagram.png);
+}
+
+
+.livro {
+    display: flex;
+    background-image: url(../images/livro.png);
+    width: 650px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.subscribe {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: white;
+    background-color: green;
+    border: none;
+}
+#nome,
+#email {
+    display: flex;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    color: rgb(80, 80, 80);
+    font-size: 1.1rem;
+    align-items: center;
+}
