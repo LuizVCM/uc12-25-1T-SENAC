@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wanderland - Blog de Viagens</title>
-    <!-- Link para o arquivo CSS principal que gerencia as importações -->
     <link rel="stylesheet" href="./assets/styles/main.css">
-    <!-- Font Awesome -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -15,6 +14,11 @@
     <section class="menu-cima">
         <div class="menu">
             <header>
+                <!--Responsividade com a logo do site-->
+                <img src="./assets/images/logo-img-03.png" alt="Wanderland Logo" class="responsivoLogo">
+                <div class="hamburguer">
+                    <i class="fa-solid fa-bars" id="mobile-menu-opener"></i>
+                </div>
                 <div class="destino">
                     <i class="fa-solid fa-map"></i>
                     <h1 class="destination">DESTINATIONS</h1>
@@ -38,11 +42,12 @@
                     <h1>SEARCH</h1>
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
+            </div>
             </header>
         </div>
 
         <div class="texto">
-            <div class="referencia">
+            <div class="referencia"  data-aos="fade-up"data-aos-duration="500">
                 <div class="data">
                     <i class="fa-regular fa-calendar"></i>
                     <h4>May 16, 2026</h4>
@@ -52,19 +57,19 @@
                     <h4>by Luiz Vinícius</h4>
                 </div>
             </div>
-            <div class="titleContent">
+            <div class="titleContent"  data-aos="fade-up" data-aos-duration="2000">
                 <span>EVERYDAY URBAN CONCRETE JUNGLE</span>
             </div>
-            <div class="descrever">
+            <div class="descrever"  data-aos="fade-up"data-aos-duration="3000">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quos minus iusto mollitia, ut,
                     repellat ea voluptatibus ratione labore</p>
             </div>
-            <button class="read">READ MORE
+            <button class="read"  data-aos="fade-up"data-aos-duration="3000">READ MORE
                 <div class="ponta"><i class="fa-solid fa-arrow-left"></i></div>
             </button>
         </div>
 
-        <div class="setas">
+        <div class="setas"  data-aos="fade-up"data-aos-anchor-placement="top-bottom">
             <div class="seta left"></div>
             <div class="seta right"></div>
         </div>
@@ -84,7 +89,7 @@
         <h1 class="travel">TRAVEL ESSENTIALS <span class="tipos"></span></h1>
 
         <section class="descricao">
-            <div class="imagem">
+            <div class="imagem l">
                 <div class="traveltips">
                     <i class="fa-solid fa-tag"></i>
                     <span>Travel tips</span>
@@ -130,7 +135,7 @@
                 </button>
             </div>
 
-            <div class="imagem">
+            <div class="imagem l">
                 <div class="traveltips">
                     <i class="fa-solid fa-tag"></i>
                     <span>Travel tips</span>
@@ -164,7 +169,7 @@
                     <i class="fa-solid fa-tag"></i>
                     <span>Adventure</span>
                 </div>
-                <img src="./assets/images/homem-primeiro.jpg" alt="Post 1">
+                <img src="./assets/images/homem-primeiro.jpg" alt="Post 1" class="l">
                 <div class="explica">
                     <div class="nomes">
                         <div class="referencia">
@@ -187,7 +192,7 @@
                     <i class="fa-solid fa-tag"></i>
                     <span>Adventure</span>
                 </div>
-                <img src="./assets/images/homem-segundo.jpg" alt="Post 2">
+                <img src="./assets/images/homem-segundo.jpg" alt="Post 2" class="l">
                 <div class="explica">
                     <div class="nomes">
                         <div class="referencia">
@@ -210,7 +215,7 @@
                     <i class="fa-solid fa-tag"></i>
                     <span>Adventures</span>
                 </div>
-                <img src="./assets/images/homem-terceiro.jpg" alt="Post 3">
+                <img src="./assets/images/homem-terceiro.jpg" alt="Post 3" class="l">
                 <div class="explica">
                     <div class="nomes">
                         <div class="referencia">
@@ -233,7 +238,7 @@
                     <i class="fa-solid fa-tag"></i>
                     <span>Adventure</span>
                 </div>
-                <img src="./assets/images/homem-quarto.jpg" alt="Post 4">
+                <img src="./assets/images/homem-quarto.jpg" alt="Post 4" class="l">
                 <div class="explica">
                     <div class="nomes">
                         <div class="referencia">
@@ -328,11 +333,11 @@
         <div class="about">
             <div class="logo"></div>
             <h1>ABOUT THE BLOG</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mas.</p>
+            <p>Lorem ipsum dolor sit amet, conse<br>ctetur adipisicing elit, sed do <br> eiusmod mas.</p>
         </div>
 
         <div class="and">
-            <h3>Based in Utah, USA, Wanderland is a blog by Markus Thompson. His posts explore outdoor experiences
+            <h3>Based in Utah, USA, Wanderland is a blog by Markus Thompson. His posts <br> explore outdoor experiences
                 through photos and diaries with tips & tricks.</h3>
 
             <div class="alinhar">
@@ -354,18 +359,15 @@
                     <div class="news">
                         <div class="update">
                             <i class="fa-regular fa-calendar"></i>
-                            <a href="#">October 2, 2019</a>
-                            <h4>Trip to Iceland</h4>
+                            <h4><mark>October 2, 2019</mark> Trip to Iceland</h4>
                         </div>
                         <div class="update">
                             <i class="fa-regular fa-calendar"></i>
-                            <a href="#">October 2, 2019</a>
-                            <h4>On the Shores of a Vanishing Island in India</h4>
+                           <h4 class="complicado"><mark>October 2, 2019</mark>On the Shores of a <br>Vanishing Island in India</h4>
                         </div>
-                        <div class="update">
+                        <div class="update">    
                             <i class="fa-regular fa-calendar"></i>
-                            <a href="#">October 2, 2019</a>
-                            <h4>Visiting Rabat</h4>
+                           <h4> <mark>October 2, 2019</mark> Visiting Rabat</h4>
                         </div>
                     </div>
                 </div>
@@ -379,17 +381,33 @@
         <div class="parteBaixo">
             <div class="socials">
                 <h5>Socials</h5>
-                <div class="social passaro"><i class="fa-brands fa-twitter"></i></div>
-                <div class="social facebook"><i class="fa-brands fa-facebook"></i></div>
                 <div class="social"><i class="fa-brands fa-instagram"></i></div>
-                <div class="social"><i class="fa-brands fa-pinterest"></i></div>
+                <div class="social"><i class="fa-brands fa-twitter"></i></div>
+                <div class="social"><i class="fa-brands fa-facebook"></i></div>
+                <div class="social"><i class="fa-brands fa-youtube"></i></div>
             </div>
             <div class="direitos">
-                &copy; <h4> Qode Interactive, All Rights Reserved</h4>
+                &copy; <h4>2020 Qode Interactive, All Rights Reserved</h4>
             </div>
         </div>
     </footer>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <div class="mobile-nav-content">
+            <i class="fa-solid fa-xmark" id="mobile-menu-closer"></i>
+            <nav>
+                <a href="#">HOME</a>
+                <a href="#">PAGES</a>
+                <a href="#">DESTINATIONS</a>
+                <a href="#">BLOG</a>
+                <a href="#">SHOP</a>
+                <a href="#">LANDING</a>
+            </nav>
+        </div>
+    </div>
     <script src="./assets/js/script.js"></script>
 </body>
 

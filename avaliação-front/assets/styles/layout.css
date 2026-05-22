@@ -22,8 +22,13 @@ header {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     font-size: 1.1rem;
+    position: relative;
+    z-index: 100;
+}
 
-
+.hamburguer {
+    display: none;
+    cursor: pointer;
 }
 
 footer {
@@ -61,4 +66,11 @@ main span {
     display: flex;
     color: white;
     margin-left: 10px;
+}
+
+
+/* Responsividade centralizada no media-queries.css */
+main {
+    max-width: 100%;
+    overflow-x: hidden;
 }

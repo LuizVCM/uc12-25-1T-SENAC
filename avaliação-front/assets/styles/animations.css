@@ -1,0 +1,16 @@
+.marcas img{
+    transition: all 0.3s linear;
+}
+
+.marcas img:hover{
+    transition: all 0.3s linear;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.imagem:hover{
+  transform: perspective(500px) rotateX(5deg) rotateY(-5deg) translateZ(10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+}

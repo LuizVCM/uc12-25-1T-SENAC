@@ -1,0 +1,331 @@
+/* ========================================
+   MEDIA QUERIES - PIXEL PERFECT (WANDERLAND)
+   Refatoração total para fidelidade absoluta
+   ======================================== */
+
+/* Estilos Base para o Menu Mobile (Overlay) */
+.mobile-nav-overlay {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    transition: right 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav-overlay.active {
+    right: 0;
+}
+
+.mobile-nav-content {
+    position: relative;
+    width: 80%;
+    text-align: center;
+}
+
+.mobile-nav-content #mobile-menu-closer {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.mobile-nav-content nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mobile-nav-content nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    transition: color 0.3s;
+}
+
+.mobile-nav-content nav a:hover {
+    color: #c49a6c;
+}
+
+/* Esconder elementos mobile por padrão */
+.hamburguer, .responsivoLogo {
+    display: none !important;
+}
+
+/* ========================================
+   BREAKPOINT: DESKTOP MÉDIO (1200px)
+   Ajustes de espaçamento e alinhamento
+   ======================================== */
+
+@media (max-width: 1250px) {
+    header {
+        width: 95% !important;
+    }
+    
+    nav {
+        gap: 3vw !important;
+    }
+    
+    .descricao, .descricao2 {
+        max-width: 95% !important;
+        transform: none !important;
+        margin: 50px auto !important;
+    }
+    
+    .imagem {
+        width: 50% !important;
+    }
+    
+    .dizer {
+        width: 45% !important;
+    }
+}
+
+/* ========================================
+   BREAKPOINT: TABLET (1024px)
+   Ativação do Menu Mobile e Empilhamento
+   ======================================== */
+
+@media (max-width: 1024px) {
+    /* Header & Menu */
+    header nav, header img:not(.responsivoLogo), .destino h1, .search h1 {
+        display: none !important;
+    }
+    
+    header {
+        border: none !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        padding: 0 5% !important;
+    }
+    
+    .hamburguer, .responsivoLogo {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .responsivoLogo {
+        width: 100px !important;
+        height: auto !important;
+        opacity: 1 !important;
+        position: static !important;
+    }
+    
+    #mobile-menu-opener {
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        display: block !important;
+    }
+
+    /* Hero Section */
+    .texto {
+        width: 90% !important;
+        height: auto !important;
+        text-align: center;
+    }
+    
+    .titleContent {
+        font-size: 2.5rem !important;
+        line-height: 1.2;
+    }
+    
+    .descrever {
+        width: 100% !important;
+    }
+
+    /* Seções de Conteúdo - Alinhamento Rigoroso */
+    .descricao, .descricao2 {
+        flex-direction: column !important;
+        gap: 40px !important;
+        margin: 80px auto !important;
+        align-items: center !important;
+    }
+    
+    .descricao2 {
+        flex-direction: column-reverse !important; /* Imagem sempre em cima no mobile */
+    }
+    
+    .imagem {
+        width: 100% !important;
+        height: 400px !important;
+        margin: 0 !important;
+    }
+    
+    .dizer {
+        width: 100% !important;
+        padding: 0 20px !important;
+        text-align: center !important;
+    }
+    
+    .dizer h2 {
+        font-size: 1.8rem !important;
+        width: 100% !important;
+    }
+    
+    .dizer p {
+        width: 100% !important;
+        margin: 20px 0 !important;
+    }
+    
+    .referencia {
+        justify-content: center !important;
+    }
+
+    /* Newsletter */
+    .marrom {
+        flex-direction: column !important;
+        height: auto !important;
+        padding: 60px 20px !important;
+        gap: 40px !important;
+    }
+    
+    .livro {
+        width: 100% !important;
+        max-width: 500px !important;
+        height: 350px !important;
+        background-size: contain !important;
+    }
+    
+    .inscricao {
+        width: 100% !important;
+        text-align: center !important;
+    }
+    
+    .inscricao h1 {
+        font-size: 2rem !important;
+        margin: 20px 0 !important;
+    }
+    
+    .mensagem {
+        flex-direction: column !important;
+        width: 100% !important;
+        left: 0 !important;
+        gap: 15px !important;
+    }
+    
+    .mensagem input {
+        width: 100% !important;
+    }
+
+    /* Loja */
+    .loja {
+        width: 95% !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    
+    .item {
+        width: calc(50% - 20px) !important;
+        margin-bottom: 30px;
+    }
+}
+
+/* ========================================
+   BREAKPOINT: MOBILE (768px)
+   Ajustes de Espaçamento e Fontes
+   ======================================== */
+
+@media (max-width: 768px) {
+    .menu-cima {
+        height: 80vh !important;
+    }
+    
+    .titleContent {
+        font-size: 2rem !important;
+    }
+    
+    main h1 {
+        font-size: 1.8rem !important;
+        padding: 0 10px;
+        text-align: center;
+    }
+    
+    .marcas {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 20px !important;
+        padding: 40px 0 !important;
+    }
+    
+    .marcas img {
+        width: 80px !important;
+    }
+    
+    /* Footer */
+    footer {
+        flex-direction: column !important;
+        height: auto !important;
+        padding: 60px 20px !important;
+        gap: 50px !important;
+    }
+    
+    .about, .and, .alinhar {
+        width: 100% !important;
+        text-align: center !important;
+        transform: none !important;
+    }
+    
+    .alinhar {
+        flex-direction: column !important;
+        gap: 40px !important;
+    }
+    
+    .update {
+        justify-content: center !important;
+    }
+    
+    .parteBaixo {
+        flex-direction: column !important;
+        position: static !important;
+        gap: 20px !important;
+        padding: 30px 0 !important;
+    }
+}
+
+/* ========================================
+   BREAKPOINT: MOBILE PEQUENO (480px)
+   Ajustes Finais de Proporção
+   ======================================== */
+
+@media (max-width: 480px) {
+    .imagem {
+        height: 280px !important;
+    }
+    
+    .titleContent {
+        font-size: 1.6rem !important;
+    }
+    
+    .item {
+        width: 100% !important;
+    }
+    
+    .iten {
+        height: 250px !important;
+    }
+    
+    .livro {
+        height: 250px !important;
+    }
+    
+    .inscricao h1 {
+        font-size: 1.6rem !important;
+    }
+    
+    .read {
+        width: 150px !important;
+        height: 45px !important;
+        font-size: 0.9rem !important;
+    }
+}
