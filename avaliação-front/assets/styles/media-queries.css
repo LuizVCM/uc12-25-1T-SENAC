@@ -1,9 +1,4 @@
-/* ========================================
-   MEDIA QUERIES - PIXEL PERFECT (WANDERLAND)
-   Refatoração total para fidelidade absoluta
-   ======================================== */
 
-/* Estilos Base para o Menu Mobile (Overlay) */
 .mobile-nav-overlay {
     position: fixed;
     top: 0;
@@ -16,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .mobile-nav-overlay.active {
@@ -56,15 +52,9 @@
     color: #c49a6c;
 }
 
-/* Esconder elementos mobile por padrão */
 .hamburguer, .responsivoLogo {
     display: none !important;
 }
-
-/* ========================================
-   BREAKPOINT: DESKTOP MÉDIO (1200px)
-   Ajustes de espaçamento e alinhamento
-   ======================================== */
 
 @media (max-width: 1250px) {
     header {
@@ -77,8 +67,6 @@
     
     .descricao, .descricao2 {
         max-width: 95% !important;
-        transform: none !important;
-        margin: 50px auto !important;
     }
     
     .imagem {
@@ -90,13 +78,14 @@
     }
 }
 
-/* ========================================
-   BREAKPOINT: TABLET (1024px)
-   Ativação do Menu Mobile e Empilhamento
-   ======================================== */
+ 
 
 @media (max-width: 1024px) {
-    /* Header & Menu */
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     header nav, header img:not(.responsivoLogo), .destino h1, .search h1 {
         display: none !important;
     }
@@ -106,6 +95,7 @@
         justify-content: space-between !important;
         width: 100% !important;
         padding: 0 5% !important;
+        height: auto !important;
     }
     
     .hamburguer, .responsivoLogo {
@@ -113,7 +103,9 @@
         align-items: center;
         justify-content: center;
     }
-    
+    .marcas{
+        flex-wrap: wrap;
+    }
     .responsivoLogo {
         width: 100px !important;
         height: auto !important;
@@ -128,11 +120,14 @@
         display: block !important;
     }
 
-    /* Hero Section */
+
     .texto {
         width: 90% !important;
         height: auto !important;
         text-align: center;
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
     }
     
     .titleContent {
@@ -144,28 +139,33 @@
         width: 100% !important;
     }
 
-    /* Seções de Conteúdo - Alinhamento Rigoroso */
     .descricao, .descricao2 {
         flex-direction: column !important;
         gap: 40px !important;
         margin: 80px auto !important;
         align-items: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 20px !important;
+        transform: none !important;
     }
     
     .descricao2 {
-        flex-direction: column-reverse !important; /* Imagem sempre em cima no mobile */
+        flex-direction: column-reverse !important;
     }
     
     .imagem {
         width: 100% !important;
         height: 400px !important;
         margin: 0 !important;
+        max-width: 100% !important;
     }
     
     .dizer {
         width: 100% !important;
         padding: 0 20px !important;
         text-align: center !important;
+        margin-left: 0 !important;
     }
     
     .dizer h2 {
@@ -182,7 +182,6 @@
         justify-content: center !important;
     }
 
-    /* Newsletter */
     .marrom {
         flex-direction: column !important;
         height: auto !important;
@@ -199,120 +198,208 @@
     
     .inscricao {
         width: 100% !important;
-        text-align: center !important;
-    }
-    
-    .inscricao h1 {
-        font-size: 2rem !important;
-        margin: 20px 0 !important;
-    }
-    
-    .mensagem {
-        flex-direction: column !important;
-        width: 100% !important;
-        left: 0 !important;
-        gap: 15px !important;
-    }
-    
-    .mensagem input {
-        width: 100% !important;
-    }
-
-    /* Loja */
-    .loja {
-        width: 95% !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-    }
-    
-    .item {
-        width: calc(50% - 20px) !important;
-        margin-bottom: 30px;
-    }
-}
-
-/* ========================================
-   BREAKPOINT: MOBILE (768px)
-   Ajustes de Espaçamento e Fontes
-   ======================================== */
-
-@media (max-width: 768px) {
-    .menu-cima {
-        height: 80vh !important;
-    }
-    
-    .titleContent {
-        font-size: 2rem !important;
-    }
-    
-    main h1 {
-        font-size: 1.8rem !important;
-        padding: 0 10px;
-        text-align: center;
-    }
-    
-    .marcas {
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        gap: 20px !important;
-        padding: 40px 0 !important;
-    }
-    
-    .marcas img {
-        width: 80px !important;
-    }
-    
-    /* Footer */
-    footer {
-        flex-direction: column !important;
-        height: auto !important;
-        padding: 60px 20px !important;
-        gap: 50px !important;
-    }
-    
-    .about, .and, .alinhar {
-        width: 100% !important;
-        text-align: center !important;
-        transform: none !important;
-    }
-    
-    .alinhar {
-        flex-direction: column !important;
-        gap: 40px !important;
-    }
-    
-    .update {
-        justify-content: center !important;
-    }
-    
-    .parteBaixo {
-        flex-direction: column !important;
+        max-width: 100% !important;
         position: static !important;
-        gap: 20px !important;
-        padding: 30px 0 !important;
-    }
-}
-
-/* ========================================
-   BREAKPOINT: MOBILE PEQUENO (480px)
-   Ajustes Finais de Proporção
-   ======================================== */
-
-@media (max-width: 480px) {
-    .imagem {
-        height: 280px !important;
+        left: 0 !important;
+        right: 0 !important;
     }
     
-    .titleContent {
-        font-size: 1.6rem !important;
-    }
-    
-    .item {
+    .inscricao h1, .inscricao h5 {
         width: 100% !important;
+        margin-left: 0 !important;
+    }
+    
+    .jornal {
+        position: static !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .banners {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    
+    .cards {
+        width: 100% !important;
+        max-width: 500px !important;
+        margin: 20px auto !important;
+    }
+
+    .loja {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
     }
     
     .iten {
+        width: 250px !important;
         height: 250px !important;
+        margin: 15px !important;
+    }
+
+    footer {
+        flex-direction: column !important;
+        height: auto !important;
+        padding: 40px 20px !important;
+        gap: 40px !important;
+    }
+    
+    .and {
+        width: 100% !important;
+        max-width: 100% !important;
+        transform: none !important;
+        margin: 0 !important;
+    }
+    
+    .updates, .notices, .instagram, .about {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+@media (max-width: 768px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    main {
+        width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    
+    header {
+        width: 100% !important;
+        padding: 0 15px !important;
+    }
+    
+    .menu {
+        width: 100% !important;
+        gap: 15px !important;
+    }
+    
+    .titleContent {
+        font-size: 2rem !important;
+    }
+    
+    .descricao, .descricao2 {
+        gap: 30px !important;
+        margin: 60px auto !important;
+        padding: 0 15px !important;
+    }
+    
+    .imagem {
+        height: 300px !important;
+    }
+    
+    .dizer h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    .iten {
+        width: 200px !important;
+        height: 200px !important;
+    }
+    
+    .marrom {
+        padding: 40px 15px !important;
+    }
+    
+    footer {
+        padding: 30px 15px !important;
+        
+    }
+    .and{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .updates{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 500px) {
+    main h1{
+        
+        font-size:32px;;
+    }
+}
+
+@media (max-width: 480px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    main {
+        width: 100% !important;
+        gap: 30px !important;
+        overflow-x: hidden !important;
+    }
+    
+    header {
+        width: 100% !important;
+        height: auto !important;
+        padding: 15px !important;
+        border: none !important;
+    }
+    
+    .menu {
+        width: 100% !important;
+        gap: 10px !important;
+        height: auto !important;
+    }
+    
+    .titleContent {
+        font-size: 1.5rem !important;
+        margin-top: -5px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .descrever {
+        font-size: 0.9rem !important;
+    }
+    
+    .descricao, .descricao2 {
+        gap: 20px !important;
+        margin: 40px auto !important;
+        padding: 0 10px !important;
+    }
+    
+    .imagem {
+        width: 100% !important;
+        height: 250px !important;
+    }
+    
+    .dizer {
+        padding: 0 10px !important;
+    }
+    
+    .dizer h2 {
+        font-size: 1.2rem !important;
+        line-height: 1.4;
+    }
+    
+    .dizer p {
+        font-size: 0.9rem !important;
+        line-height: 1.6;
+    }
+    
+    .referencia {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+    
+    .marrom {
+        padding: 30px 10px !important;
+        gap: 30px !important;
     }
     
     .livro {
@@ -320,12 +407,110 @@
     }
     
     .inscricao h1 {
-        font-size: 1.6rem !important;
+        font-size: 1.8rem !important;
     }
     
-    .read {
-        width: 150px !important;
-        height: 45px !important;
+    .inscricao h5 {
         font-size: 0.9rem !important;
+    }
+    
+    .banners {
+        gap: 15px !important;
+        margin-top: 40px !important;
+    }
+    
+    .cards {
+        min-width: 300px !important;
+    }
+    
+    .iten {
+        width: 150px !important;
+        height: 150px !important;
+        margin: 10px !important;
+    }
+    
+    .item h3 {
+        font-size: 0.9rem !important;
+    }
+    
+    .loja {
+        gap: 10px !important;
+    }
+    
+    footer {
+        height: auto !important;
+        padding: 20px 10px !important;
+        gap: 30px !important;
+    }
+    
+    .and {
+        gap: 30px !important;
+    }
+    
+    .and h3 {
+        font-size: 1rem !important;
+    }
+    
+    .updates, .notices, .instagram, .about {
+        max-width: 100% !important;
+    }
+    
+    .yname, .yemail {
+        width: 100% !important;
+        padding: 12px !important;
+    }
+    
+    #nome, #email {
+        width: 100% !important;
+    }
+}
+@media (max-width: 360px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    main {
+        width: 100% !important;
+        gap: 20px !important;
+    }
+    
+    header {
+        padding: 10px !important;
+    }
+    
+    .titleContent {
+        font-size: 1.2rem !important;
+    }
+    
+    .descrever {
+        font-size: 0.8rem !important;
+    }
+    
+    .descricao, .descricao2 {
+        gap: 15px !important;
+        margin: 30px auto !important;
+        padding: 0 5px !important;
+    }
+    
+    .imagem {
+        height: 200px !important;
+    }
+    
+    .dizer h2 {
+        font-size: 1rem !important;
+    }
+    
+    .dizer p {
+        font-size: 0.8rem !important;
+    }
+    
+    .iten {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    
+    footer {
+        padding: 15px 5px !important;
     }
 }
