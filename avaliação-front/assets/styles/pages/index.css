@@ -94,7 +94,6 @@
     position: relative;
     bottom: 0;
     left: 0;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -273,6 +272,12 @@ main h1 .tipos {
     display: flex;
     align-items: center;
     gap: 23px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    padding: 0;
+    
 }
 
 .cards .explica {
@@ -312,11 +317,11 @@ main h1 .tipos {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     height: 100%;
     margin-top: -15px;
-    flex-wrap: wrap;
+    flex-wrap:none;
 }
 
 .item h3 {

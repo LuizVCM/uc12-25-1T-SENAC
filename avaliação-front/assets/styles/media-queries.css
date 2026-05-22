@@ -1,4 +1,4 @@
-
+/*Só para explicar, o '!important' serve para colocar aquele estilo como o mais importante e preferência para rodar, evitando conflitos com os elementos, msm que eu não tenha conseguido totalmente no media-queries*/
 .mobile-nav-overlay {
     position: fixed;
     top: 0;
@@ -78,7 +78,11 @@
     }
 }
 
- 
+ @media (max-width: 1240px) {
+    .loja{
+        flex-wrap: wrap;
+    }
+ }
 
 @media (max-width: 1024px) {
     html, body {
@@ -86,7 +90,7 @@
         overflow-x: hidden;
     }
 
-    header nav, header img:not(.responsivoLogo), .destino h1, .search h1 {
+    header nav,  .destino h1, .search h1 {
         display: none !important;
     }
     
@@ -321,6 +325,10 @@
     }
     .updates{
         flex-direction: column;
+    }
+    .mensagem{
+        flex-direction: column;
+        margin-top: 10vh;
     }
 
 }
